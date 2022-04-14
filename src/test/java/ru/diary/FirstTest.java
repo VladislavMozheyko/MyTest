@@ -124,4 +124,8 @@ public class FirstTest extends WebDriverSettings {
         String res = element.getText();
         System.out.println("Error: " + res);
     }
+    @Test
+    public void test5(){
+        driver.get("https://andersenlab.com/");
+    }
 }
