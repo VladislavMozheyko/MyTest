@@ -6,9 +6,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import pages.base.BasePage;
 
 public class BbcRegistration extends BasePage {
+    private static final Logger logger= LoggerFactory.getLogger(BbcRegistration.class);
     Actions actions=new Actions(driver);
     @FindBy(xpath = "//span[text()='Register now']")
     private WebElement registrationBtn;
@@ -40,12 +43,14 @@ public class BbcRegistration extends BasePage {
         return this;
     }
     public BbcRegistration clickOrOverBtn() throws InterruptedException {
+        logger.info("Sign in page open.");
         waitElementIsVisible(orOverBtn);
         actions.moveToElement(orOverBtn).click().perform();
         Thread.sleep(2000);
         return this;
     }
     public BbcRegistration fillBerthDay() throws InterruptedException {
+        logger.info("Over check page open.");
         waitElementIsVisible(day);
         actions.moveToElement(day).click().sendKeys("19")
                 .moveToElement(month).click().sendKeys("11")
@@ -54,6 +59,7 @@ public class BbcRegistration extends BasePage {
         return this;
     }
     public BbcRegistration clickSubmitBtn() throws InterruptedException {
+        logger.info("Fill berth day fields page open");
         waitElementIsVisible(submitBtn);
         actions.moveToElement(submitBtn).click().build().perform();
         Thread.sleep(2000);
@@ -74,6 +80,7 @@ public class BbcRegistration extends BasePage {
     public BbcRegistration checkPasswordErrorText1() throws InterruptedException {
         waitElementIsVisible(errorMessageOfPasswordField);
         String error=errorMessageOfPasswordField.getText();
+        logger.error(error);
         Assert.assertEquals(error,"Извините, этот пароль недействителен. Пожалуйста, включите одну букву.");
         Thread.sleep(1000);
         return this;
@@ -81,6 +88,7 @@ public class BbcRegistration extends BasePage {
     public BbcRegistration checkPasswordErrorText2() throws InterruptedException {
         waitElementIsVisible(errorMessageOfPasswordField);
         String error2=errorMessageOfPasswordField.getText();
+        logger.error(error2);
         Assert.assertEquals(error2,"Извините, этот пароль слишком короткий. В нём должно быть не менее 8 символов.");
         Thread.sleep(1000);
         return this;
@@ -88,6 +96,7 @@ public class BbcRegistration extends BasePage {
     public BbcRegistration checkPasswordErrorText3() throws InterruptedException {
         waitElementIsVisible(errorMessageOfPasswordField);
         String error3=errorMessageOfPasswordField.getText();
+        logger.error(error3);
         Assert.assertEquals(error3,"Извините, этот пароль слишком длинный. В нём должно быть не более 50 символов.");
         Thread.sleep(1000);
         return this;
@@ -95,6 +104,7 @@ public class BbcRegistration extends BasePage {
     public BbcRegistration checkPasswordErrorText4() throws InterruptedException {
         waitElementIsVisible(errorMessageOfPasswordField);
         String error4=errorMessageOfPasswordField.getText();
+        logger.error(error4);
         Assert.assertEquals(error4,"Извините, этот пароль недействителен. Пожалуйста, включите что-нибудь, кроме букв.");
         Thread.sleep(1000);
         return this;
@@ -102,6 +112,7 @@ public class BbcRegistration extends BasePage {
     public BbcRegistration checkPasswordErrorText5() throws InterruptedException {
         waitElementIsVisible(errorMessageOfPasswordField);
         String error5=errorMessageOfPasswordField.getText();
+        logger.error(error5);
         Assert.assertEquals(error5,"Извините, этот пароль недействителен. Пожалуйста, включите одну букву.");
         Thread.sleep(1000);
         return this;
@@ -109,6 +120,7 @@ public class BbcRegistration extends BasePage {
     public BbcRegistration checkPasswordErrorText6() throws InterruptedException {
         waitElementIsVisible(errorMessageOfPasswordField);
         String error6=errorMessageOfPasswordField.getText();
+        logger.error(error6);
         Assert.assertEquals(error6,"Извините, этот пароль недействителен. Пожалуйста, включите одну букву.");
         Thread.sleep(1000);
         return this;

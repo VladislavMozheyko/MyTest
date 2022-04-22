@@ -1,25 +1,13 @@
 package com.andersenlab;
 
-import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import ru.diary.WebDriverSettings;
 import tests.base.BaseTest;
 
-import java.time.Duration;
-
 import static Constants.Constant.Urls.ANDERSEN_HOME_PAGE;
-import static org.openqa.selenium.support.ui.ExpectedConditions.alertIsPresent;
 
 public class andersenlabTest extends BaseTest {
     @Test
-    public void test1() throws InterruptedException {
+    public void checkAnyVisualElementsCaseOne() throws InterruptedException {
         basePage.open(ANDERSEN_HOME_PAGE);
 
         andersenHome
@@ -44,7 +32,7 @@ public class andersenlabTest extends BaseTest {
                 .checkTitleFindDevelopers();
     }
     @Test
-    public void test2() throws InterruptedException {
+    public void checkAnyVisualElementsCaseTwo() throws InterruptedException {
         basePage.open(ANDERSEN_HOME_PAGE);
 
         andersenHome

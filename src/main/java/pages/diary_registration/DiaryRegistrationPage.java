@@ -7,9 +7,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import pages.base.BasePage;
 
 public class DiaryRegistrationPage extends BasePage {
+    private static final Logger logger= LoggerFactory.getLogger(DiaryRegistrationPage.class);
     Actions actions=new Actions(driver);
     @FindBy(id="signupform-username")
     private WebElement userName;
@@ -48,17 +51,20 @@ public class DiaryRegistrationPage extends BasePage {
     }
     public DiaryRegistrationPage clearUserName() throws InterruptedException {
         userName.clear();
+        logger.info("User name field cleared.");
         Thread.sleep(1000);
         return this;
     }
     public DiaryRegistrationPage clearEmail() throws InterruptedException {
         email.clear();
+        logger.info("Email field cleared.");
         Thread.sleep(1000);
         return this;
     }
     public DiaryRegistrationPage chekTitile() throws InterruptedException {
         String title=driver.getTitle();
         Assert.assertTrue(title.equals("Регистрация — @дневники: асоциальная сеть"));
+        logger.info("Title check complete");
         Thread.sleep(1000);
         return this;
     }
@@ -69,7 +75,7 @@ public class DiaryRegistrationPage extends BasePage {
     }
     public DiaryRegistrationPage errorMessage(){
         String error=errorText.getText();
-        System.out.println("Error: "+error);
+        logger.error(error);
         return this;
     }
     public DiaryRegistrationPage registrationConfirmPage() throws InterruptedException {

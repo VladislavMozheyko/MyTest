@@ -9,11 +9,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import pages.base.BasePage;
 
 import java.time.Duration;
 
 public class AndersenAndroidApp extends BasePage {
+    private static final Logger logger= LoggerFactory.getLogger(AndersenAndroidApp.class);
     Actions actions=new Actions(driver);
     JavascriptExecutor js=(JavascriptExecutor)driver;
     @FindBy(id = "gatsby-announcer")
@@ -35,6 +38,7 @@ public class AndersenAndroidApp extends BasePage {
         new WebDriverWait(driver, Duration.ofSeconds(10)).until(ExpectedConditions.textToBePresentInElement(titleAndroidPage,"Navigated to Android App Development Services"));
         String title=titleAndroidPage.getText();
         Assert.assertEquals(title,"Navigated to Android App Development Services");
+        logger.info(title+" open.");
         Thread.sleep(2000);
         return this;
     }
@@ -49,12 +53,14 @@ public class AndersenAndroidApp extends BasePage {
         String requestText=requestTitle.getText();
         Thread.sleep(1000);
         Assert.assertEquals(requestText,"Request specialists");
+        logger.info(requestText+" window open");
         Thread.sleep(2000);
         return this;
     }
     public AndersenAndroidApp clickCloseRequestBtn() throws InterruptedException {
         waitElementIsVisible(requestCloseBtn);
         actions.moveToElement(requestCloseBtn).click().build().perform();
+        logger.info("Request specialists window close.");
         Thread.sleep(2000);
         return this;
     }
@@ -69,6 +75,7 @@ public class AndersenAndroidApp extends BasePage {
     public AndersenAndroidApp checkSkypeTitle() throws InterruptedException {
         String skypeText=driver.getTitle();
         Assert.assertTrue(skypeText.equals("Присоединение к беседе"));
+        logger.info("New page skype open");
         Thread.sleep(1000);
         return this;
     }

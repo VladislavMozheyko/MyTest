@@ -8,9 +8,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import pages.base.BasePage;
 
 public class AndersenHome extends BasePage {
+    private static final Logger logger= LoggerFactory.getLogger(AndersenHome.class);
     Actions actions=new Actions(driver);
     JavascriptExecutor js=(JavascriptExecutor)driver;
     @FindBy(xpath = "//*[@id=\"industries\"]/div/div/div/div/div/div/div[5]/div/a")
@@ -47,24 +50,28 @@ public class AndersenHome extends BasePage {
     public AndersenHome checkFinancialTitle() throws InterruptedException {
         String title= driver.getTitle();
         Assert.assertTrue(title.equals("Custom-Built Finance Solutions for Your Business-Specific Needs"));
+        logger.info("Financial services page open.");
         Thread.sleep(2000);
         return this;
     }
     public AndersenHome clickDiscussProjectBtn() throws InterruptedException {
         waitElementIsVisible(discussProjectBtn);
         actions.moveToElement(discussProjectBtn).click().build().perform();
+        logger.info("Discuss window open.");
         Thread.sleep(2000);
         return this;
     }
     public AndersenHome clickCloseDiscussProjectBtn() throws InterruptedException {
         waitElementIsVisible(closeDiscussProjectBtn);
         actions.moveToElement(closeDiscussProjectBtn).click().build().perform();
+        logger.info("Discuss window close.");
         Thread.sleep(2000);
         return this;
     }
     public AndersenHome clickCookiesBtn() throws InterruptedException {
         waitElementIsVisible(cookiesBtn);
         actions.moveToElement(cookiesBtn).click().build().perform();
+        logger.info("Cookies accept.");
         Thread.sleep(2000);
         return this;
     }
@@ -85,6 +92,7 @@ public class AndersenHome extends BasePage {
     public AndersenHome checkBackEndBtnText() throws InterruptedException {
         String backEndText=backEndBtn.getText();
         Assert.assertEquals(backEndText,"Back-end");
+        logger.info("Back end button pressed.");
         Thread.sleep(2000);
         return this;
     }
@@ -96,6 +104,7 @@ public class AndersenHome extends BasePage {
     public AndersenHome checkFrontEndBtnText() throws InterruptedException {
         String frontEndText=frontEndBtn.getText();
         Assert.assertEquals(frontEndText,"Front-end");
+        logger.info("Front end button pressed.");
         Thread.sleep(2000);
         return this;
     }
@@ -109,6 +118,7 @@ public class AndersenHome extends BasePage {
     public AndersenHome checkMobileBtn() throws InterruptedException {
         String mobileBtnText=mobileBtn.getText();
         Assert.assertEquals(mobileBtnText,"Mobile");
+        logger.info("Mobile button pressed.");
         Thread.sleep(2000);
         return this;
     }
