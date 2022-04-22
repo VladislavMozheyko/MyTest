@@ -1,0 +1,12 @@
+pages\Bbc\BbcRegistration.class
+pages\andersen\AndersenHome.class
+pages\diary_registration\DiaryRegistrationPage.class
+Constants\Constant.class
+pages\Bbc\BbcAutorisation.class
+pages\andersen\AndersenFindDevelopers.class
+pages\base\BasePage.class
+Common\CommonActions.class
+Constants\Constant$Urls.class
+Common\Config.class
+pages\andersen\AndersenAndroidApp.class
+Constants\Constant$TimeoutVariable.class

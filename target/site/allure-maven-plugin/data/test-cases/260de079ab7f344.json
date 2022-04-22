@@ -1,0 +1,60 @@
+{
+  "uid" : "260de079ab7f344",
+  "name" : "authorizationVisibility",
+  "fullName" : "com.bbc.BbcTest.authorizationVisibility",
+  "historyId" : "2cc50e1e0990b2c41487e84cca016a7b",
+  "time" : {
+    "start" : 1650647928068,
+    "stop" : 1650647939521,
+    "duration" : 11453
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.bbc"
+  }, {
+    "name" : "testClass",
+    "value" : "com.bbc.BbcTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "authorizationVisibility"
+  }, {
+    "name" : "suite",
+    "value" : "com.bbc.BbcTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-9I9U0LK"
+  }, {
+    "name" : "thread",
+    "value" : "5080@DESKTOP-9I9U0LK.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "260de079ab7f344.json",
+  "parameterValues" : [ ]
+}

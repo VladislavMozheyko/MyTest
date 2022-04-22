@@ -1,0 +1,60 @@
+{
+  "uid" : "f26d6f52d1522d91",
+  "name" : "negativePasswordCheck",
+  "fullName" : "com.bbc.BbcTest.negativePasswordCheck",
+  "historyId" : "ad2b3806050a9e4d1669c9cdfc0d439b",
+  "time" : {
+    "start" : 1650647881190,
+    "stop" : 1650647928065,
+    "duration" : 46875
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.bbc"
+  }, {
+    "name" : "testClass",
+    "value" : "com.bbc.BbcTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "negativePasswordCheck"
+  }, {
+    "name" : "suite",
+    "value" : "com.bbc.BbcTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-9I9U0LK"
+  }, {
+    "name" : "thread",
+    "value" : "5080@DESKTOP-9I9U0LK.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f26d6f52d1522d91.json",
+  "parameterValues" : [ ]
+}

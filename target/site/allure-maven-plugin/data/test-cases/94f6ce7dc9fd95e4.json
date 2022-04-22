@@ -1,0 +1,60 @@
+{
+  "uid" : "94f6ce7dc9fd95e4",
+  "name" : "testVisibility",
+  "fullName" : "ru.diary.FirstTest.testVisibility",
+  "historyId" : "c2ee7e82a5eddeae3590789fbdf73a79",
+  "time" : {
+    "start" : 1650647998439,
+    "stop" : 1650648012150,
+    "duration" : 13711
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ru.diary"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.diary.FirstTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testVisibility"
+  }, {
+    "name" : "suite",
+    "value" : "ru.diary.FirstTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-9I9U0LK"
+  }, {
+    "name" : "thread",
+    "value" : "5080@DESKTOP-9I9U0LK.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "94f6ce7dc9fd95e4.json",
+  "parameterValues" : [ ]
+}

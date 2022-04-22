@@ -1,0 +1,30 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[@class='CardCollaborationModel-module--item--wOlqm CardCollaborationModel-module--light--SsJCn']\"}\n  (Session info: chrome=100.0.4896.127)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: '4.1.3', revision: '7b1ebf28ef'\nSystem info: host: 'DESKTOP-9I9U0LK', ip: '192.168.0.115', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [ac8bb7959c9dd67b85fcecfd249ee9d5, findElement {using=xpath, value=//a[@class='CardCollaborationModel-module--item--wOlqm CardCollaborationModel-module--light--SsJCn']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.127, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\\Users\\User\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65242}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65242/devtoo..., se:cdpVersion: 100.0.4896.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: ac8bb7959c9dd67b85fcecfd249ee9d5",
+      "children" : [ {
+        "name" : "checkAnyVisualElementsCaseOne",
+        "uid" : "41d754b93889d11a",
+        "parentUid" : "cf2fc7063fa10c672d57ae80128355f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650647818551,
+          "stop" : 1650647843994,
+          "duration" : 25443
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cf2fc7063fa10c672d57ae80128355f6"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

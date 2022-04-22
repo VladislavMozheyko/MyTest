@@ -1,0 +1,60 @@
+{
+  "uid" : "d89c5cc78300db4a",
+  "name" : "testFailureLogIn2",
+  "fullName" : "ru.diary.FirstTest.testFailureLogIn2",
+  "historyId" : "3320b3ffe160da9e3777862a19ee7ff9",
+  "time" : {
+    "start" : 1650647968463,
+    "stop" : 1650647977376,
+    "duration" : 8913
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "ru.diary"
+  }, {
+    "name" : "testClass",
+    "value" : "ru.diary.FirstTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testFailureLogIn2"
+  }, {
+    "name" : "suite",
+    "value" : "ru.diary.FirstTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-9I9U0LK"
+  }, {
+    "name" : "thread",
+    "value" : "5080@DESKTOP-9I9U0LK.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d89c5cc78300db4a.json",
+  "parameterValues" : [ ]
+}

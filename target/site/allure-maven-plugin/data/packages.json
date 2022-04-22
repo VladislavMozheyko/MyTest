@@ -1,0 +1,225 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com",
+    "children" : [ {
+      "name" : "andersenlab",
+      "children" : [ {
+        "name" : "checkAnyVisualElementsCaseOne",
+        "uid" : "41d754b93889d11a",
+        "parentUid" : "8cc33327607de251daf3ca973fa65ca3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1650647818551,
+          "stop" : 1650647843994,
+          "duration" : 25443
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "checkAnyVisualElementsCaseTwo",
+        "uid" : "4d97dc3e9f2cdc8c",
+        "parentUid" : "8cc33327607de251daf3ca973fa65ca3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650647844095,
+          "stop" : 1650647881171,
+          "duration" : 37076
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8cc33327607de251daf3ca973fa65ca3"
+    }, {
+      "name" : "bbc",
+      "children" : [ {
+        "name" : "negativePasswordCheck",
+        "uid" : "f26d6f52d1522d91",
+        "parentUid" : "b6426cf3aef6e779e40ea915fab53ce8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650647881190,
+          "stop" : 1650647928065,
+          "duration" : 46875
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "authorizationVisibility",
+        "uid" : "260de079ab7f344",
+        "parentUid" : "b6426cf3aef6e779e40ea915fab53ce8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650647928068,
+          "stop" : 1650647939521,
+          "duration" : 11453
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "authorizationVisibilityWarning",
+        "uid" : "66ed9dc91ab7c2fc",
+        "parentUid" : "b6426cf3aef6e779e40ea915fab53ce8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650647939527,
+          "stop" : 1650647948012,
+          "duration" : 8485
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b6426cf3aef6e779e40ea915fab53ce8"
+    } ],
+    "uid" : "19cbf184dc946cabc9f6e8f92c007470"
+  }, {
+    "name" : "ru.diary",
+    "children" : [ {
+      "name" : "testLogIn",
+      "uid" : "5ae31c147ccad38b",
+      "parentUid" : "0e2281bc8547ffea2b781f60394a8038",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650647948022,
+        "stop" : 1650647962158,
+        "duration" : 14136
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testFailureLogIn1",
+      "uid" : "e6d15fd3be0728ee",
+      "parentUid" : "0e2281bc8547ffea2b781f60394a8038",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650647962163,
+        "stop" : 1650647968457,
+        "duration" : 6294
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testFailureLogIn2",
+      "uid" : "d89c5cc78300db4a",
+      "parentUid" : "0e2281bc8547ffea2b781f60394a8038",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650647968463,
+        "stop" : 1650647977376,
+        "duration" : 8913
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testFailureLogIn3",
+      "uid" : "dd8e808e9e212dbb",
+      "parentUid" : "0e2281bc8547ffea2b781f60394a8038",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650647977382,
+        "stop" : 1650647988498,
+        "duration" : 11116
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testFailureLogIn4",
+      "uid" : "a91f5058178fff3a",
+      "parentUid" : "0e2281bc8547ffea2b781f60394a8038",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650647988503,
+        "stop" : 1650647998435,
+        "duration" : 9932
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testVisibility",
+      "uid" : "94f6ce7dc9fd95e4",
+      "parentUid" : "0e2281bc8547ffea2b781f60394a8038",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650647998439,
+        "stop" : 1650648012150,
+        "duration" : 13711
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testRuEngLetters",
+      "uid" : "3f496c7cba90cf19",
+      "parentUid" : "0e2281bc8547ffea2b781f60394a8038",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650648012155,
+        "stop" : 1650648024274,
+        "duration" : 12119
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ru.diary"
+  } ]
+}
